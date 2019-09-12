@@ -18,7 +18,7 @@ class App extends React.Component {
     };
   }
 
-  formattedTime(time) {
+  formattedTime = (time) => {
       var date = new Date();
       date.setTime(time);
       var formatted_time = date.getHours(date) + ':' + date.getMinutes(date) + ':' + date.getSeconds(date);
